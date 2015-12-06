@@ -28,6 +28,7 @@
 		A008CC321BD4712200DFFFFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A008CC301BD4712200DFFFFA /* LaunchScreen.storyboard */; };
 		A008CC3D1BD4712300DFFFFA /* CocoaPodsTest_10_18Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A008CC3C1BD4712300DFFFFA /* CocoaPodsTest_10_18Tests.swift */; };
 		A008CC481BD4712300DFFFFA /* CocoaPodsTest_10_18UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A008CC471BD4712300DFFFFA /* CocoaPodsTest_10_18UITests.swift */; };
+		A00B83CC1C14BAAF00C66C89 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00B83CA1C14BAAF00C66C89 /* ImageViewController.swift */; };
 		A0C7ED421C120F98005FDC86 /* CameraViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C7ED411C120F98005FDC86 /* CameraViewCell.swift */; };
 		DB953A2CB1B8A666B8D2A512 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 438B1DF276902B24B7A7E8C5 /* Pods.framework */; };
 /* End PBXBuildFile section */
@@ -79,6 +80,7 @@
 		A008CC431BD4712300DFFFFA /* CocoaPodsTest_10_18UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocoaPodsTest_10_18UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A008CC471BD4712300DFFFFA /* CocoaPodsTest_10_18UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocoaPodsTest_10_18UITests.swift; sourceTree = "<group>"; };
 		A008CC491BD4712300DFFFFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A00B83CA1C14BAAF00C66C89 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		A0C7ED411C120F98005FDC86 /* CameraViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewCell.swift; sourceTree = "<group>"; };
 		D94D6CD473C4781FFD0CC4D1 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -178,6 +180,7 @@
 				A008CC271BD4712200DFFFFA /* AppDelegate.swift */,
 				A008CC291BD4712200DFFFFA /* ViewController.swift */,
 				A0C7ED411C120F98005FDC86 /* CameraViewCell.swift */,
+				A00B83CA1C14BAAF00C66C89 /* ImageViewController.swift */,
 				A008CC2B1BD4712200DFFFFA /* Main.storyboard */,
 				466274421C052DE300FE789B /* TableLogInViewController.swift */,
 				465F9A811BE5A2C5007BFA92 /* Holiday.json */,
@@ -393,6 +396,7 @@
 			files = (
 				466274431C052DE300FE789B /* TableLogInViewController.swift in Sources */,
 				A008CC2A1BD4712200DFFFFA /* ViewController.swift in Sources */,
+				A00B83CC1C14BAAF00C66C89 /* ImageViewController.swift in Sources */,
 				A008CC281BD4712200DFFFFA /* AppDelegate.swift in Sources */,
 				A0C7ED421C120F98005FDC86 /* CameraViewCell.swift in Sources */,
 			);

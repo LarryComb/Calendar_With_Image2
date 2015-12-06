@@ -65,6 +65,31 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
         self.navigationController?.navigationBarHidden = true
         
         monthLabel.text = CVDate(date: NSDate()).globalDescription
+        
+        let imageQuery = PFQuery(className: "Image")
+        let date = NSDate(timeIntervalSinceNow: 86400000 * -1)
+        imageQuery.whereKey("createdAt", greaterThanOrEqualTo: date)
+    
+        imageQuery.findObjectsInBackgroundWithBlock { [weak self] (imageObjects, error) -> Void in
+            if error == nil {
+                if let imageObjects = imageObjects {
+                    for imageObject in imageObjects {
+                        if let imageFile = imageObject["image"] as? PFFile {
+                            if let data = try? imageFile.getData() {
+                                if let image = UIImage(data: data) {
+                                    self?.images.append(image)
+                                }
+                            }
+                        }
+                    }
+                }
+            
+                self?.TableView.reloadData()
+                
+            } else {
+                //TODO Alert user that images are not loading
+            }
+        }
         //let testObject = PFObject(className: "TestObject")
         //testObject["foo"] = "barr"
         //testObject.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
@@ -206,12 +231,25 @@ extension ViewController: UITableViewDelegate{
         
     }
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath){
-     print(indexPath)
-    
+        let image = self.images[indexPath.row]
+        
+        let viewController = ImageViewController(nibName: nil, bundle: nil)
+        viewController.image = image
+        viewController.delegate = self
+        
+        
+        presentViewController(viewController, animated: true, completion: nil)
     }
 
 }
 
+extension ViewController: ImageViewControllerDelegate {
+    
+    func imageViewControllerDidPressBackButton(controller: ImageViewController) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+}
 
 
 // MARK: - CVCalendarViewDelegate & CVCalendarMenuViewDelegate
