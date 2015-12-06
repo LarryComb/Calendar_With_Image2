@@ -72,6 +72,20 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
             
     }
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        let name = PFUser.currentUser()?.username
+        if name == nil {
+            self.view.viewWithTag(1)?.hidden = false
+        }
+        else
+        {
+            
+            self.view.viewWithTag(1)?.hidden = true
+
+        }
+    }
+    
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
@@ -135,6 +149,7 @@ func authenticate()
     
     @IBAction func LogOut(sender: AnyObject){
         PFUser.logOut()
+        self.view.viewWithTag(1)?.hidden = false
     
     }
     
@@ -153,8 +168,8 @@ func authenticate()
             self.TableView.reloadData()
         }
             self.dismissViewControllerAnimated(true, completion: nil)
-        
-        
+             
+
     }
 
 }
@@ -174,6 +189,7 @@ extension ViewController: UITableViewDelegate{
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)as! CameraViewCell
         let image = self.images[indexPath.row]
         cell.ImageView.image = image
+        cell.UserName.text = PFUser.currentUser()?.username
         return cell
         
     }
