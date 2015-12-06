@@ -164,11 +164,23 @@ func authenticate()
     
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]){
         if let image = info[UIImagePickerControllerOriginalImage]as? UIImage {
+            let Parseimage = PFObject(className: "Image")
+            Parseimage.setObject(PFUser.currentUser()!, forKey: "user")
+            let data = UIImageJPEGRepresentation(image, 0.8)
+            let imagefile = PFFile(data: data!)
+            Parseimage.setObject(imagefile!, forKey: "image")
+            do {
+                try Parseimage.save()
+            } catch _ {
+                print("Error happened saving to parse")
+            }
+
             self.images.append(image)
             self.TableView.reloadData()
+            
         }
             self.dismissViewControllerAnimated(true, completion: nil)
-             
+        
 
     }
 
@@ -193,7 +205,10 @@ extension ViewController: UITableViewDelegate{
         return cell
         
     }
-
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath){
+     print(indexPath)
+    
+    }
 
 }
 
