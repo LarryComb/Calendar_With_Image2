@@ -34,7 +34,7 @@ class ImageViewController: UIViewController {
         imageView.image = image
         self.view.addSubview(imageView)
         
-        backButton = UIButton(frame: CGRectMake(10, 10, 30, 30))
+        backButton = UIButton(frame: CGRectMake(10, 10, 50, 50))
         backButton.setTitle("X", forState: .Normal)
         backButton.setTitle("O", forState: UIControlState.Highlighted)
         backButton.addTarget(self, action: "didPressBackButton:", forControlEvents: .TouchUpInside)

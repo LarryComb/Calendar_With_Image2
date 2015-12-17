@@ -24,7 +24,9 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
     @IBOutlet weak var UserName: UITextField!
     @IBOutlet weak var TableView: UITableView!
     
-    var images: [UIImage] = []
+    lazy var images: [UIImage] = []
+    lazy var imageObjects: [PFObject] = []
+    
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?)
     {
@@ -53,8 +55,8 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
          return true
     }
     
-    var shouldShowDaysOut = true
-    var animationFinished = true
+    lazy var shouldShowDaysOut = true
+    lazy var animationFinished = true
     
     
     // MARK: - Life cycle
@@ -63,6 +65,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
         super.viewDidLoad()
         
         self.navigationController?.navigationBarHidden = true
+        TableView.userInteractionEnabled = false
         
         monthLabel.text = CVDate(date: NSDate()).globalDescription
         
@@ -77,7 +80,10 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
                         if let imageFile = imageObject["image"] as? PFFile {
                             if let data = try? imageFile.getData() {
                                 if let image = UIImage(data: data) {
-                                    self?.images.append(image)
+                                    self?.imageObjects.insert(imageObject, atIndex: 0)
+                                    do { try (imageObject["user"] as? PFUser)?.fetchIfNeeded() }
+                                    catch {}
+                                    self?.images.insert(image, atIndex: 0)
                                 }
                             }
                         }
@@ -163,19 +169,22 @@ func authenticate()
     @IBAction func SignUp(sender: AnyObject){
         
         SignUp()
+        TableView.userInteractionEnabled = true
     
     }
     
     @IBAction func SignIn(sender: AnyObject){
         
         SignIn()
+        TableView.userInteractionEnabled = true
     
     }
     
     @IBAction func LogOut(sender: AnyObject){
         PFUser.logOut()
         self.view.viewWithTag(1)?.hidden = false
-    
+        TableView.userInteractionEnabled = false
+        
     }
     
     @IBAction func Camera(sender: AnyObject){
@@ -200,7 +209,8 @@ func authenticate()
                 print("Error happened saving to parse")
             }
 
-            self.images.append(image)
+            self.images.insert(image, atIndex: 0)
+            self.imageObjects.insert(Parseimage, atIndex: 0)
             self.TableView.reloadData()
             
         }
@@ -226,7 +236,9 @@ extension ViewController: UITableViewDelegate{
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)as! CameraViewCell
         let image = self.images[indexPath.row]
         cell.ImageView.image = image
+        //below code changes all UserName labels to current user name
         cell.UserName.text = PFUser.currentUser()?.username
+        cell.UserName.text = (self.imageObjects[indexPath.row]["user"] as? PFUser)?["username"] as? String
         return cell
         
     }

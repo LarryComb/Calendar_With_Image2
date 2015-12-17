@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
         <!--Calendar Delegate-->
@@ -18,7 +18,6 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Month Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QQ2-jf-W2c">
                                 <rect key="frame" x="8" y="15" width="304" height="21"/>
-                                <animations/>
                                 <color key="backgroundColor" red="0.40000000600000002" green="1" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="WpD-Rj-LHu"/>
@@ -29,7 +28,6 @@
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CnE-tf-f5Z" userLabel="Calendar Menu View" customClass="CVCalendarMenuView" customModule="CVCalendar">
                                 <rect key="frame" x="8" y="35" width="304" height="20"/>
-                                <animations/>
                                 <color key="backgroundColor" red="0.40000000600000002" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="TFN-dx-PB9"/>
@@ -39,16 +37,14 @@
                                 </connections>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B8c-q0-oQw" customClass="CVCalendarView" customModule="CVCalendar">
-                                <rect key="frame" x="8" y="55" width="304" height="25"/>
-                                <animations/>
+                                <rect key="frame" x="8" y="55" width="304" height="65"/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <outlet property="calendarDelegate" destination="BYZ-38-t0r" id="6aB-FM-9hL"/>
                                 </connections>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="MainTableView" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ADy-Ac-rSY">
-                                <rect key="frame" x="8" y="80" width="304" height="370"/>
-                                <animations/>
+                                <rect key="frame" x="8" y="120" width="304" height="330"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexBackgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
@@ -61,20 +57,16 @@
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Users Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KEV-be-4rm">
                                                     <rect key="frame" x="19" y="11" width="133" height="24"/>
-                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iFh-MG-iHc">
                                                     <rect key="frame" x="209" y="0.0" width="63" height="43"/>
-                                                    <animations/>
                                                 </imageView>
                                             </subviews>
-                                            <animations/>
                                             <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="0.48243534482758621" colorSpace="calibratedRGB"/>
                                         </tableViewCellContentView>
-                                        <animations/>
                                         <connections>
                                             <outlet property="ImageView" destination="iFh-MG-iHc" id="dx8-oj-fA7"/>
                                             <outlet property="UserName" destination="KEV-be-4rm" id="hfo-hf-rTV"/>
@@ -87,11 +79,10 @@
                                 </connections>
                             </tableView>
                             <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HeU-LC-JuG" userLabel="StartUserView">
-                                <rect key="frame" x="40" y="200" width="240" height="220"/>
+                                <rect key="frame" x="40" y="160" width="240" height="260"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nYp-AX-TEO">
-                                        <rect key="frame" x="8" y="174" width="96" height="26"/>
-                                        <animations/>
+                                        <rect key="frame" x="8" y="174" width="96" height="66"/>
                                         <color key="backgroundColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Sign Up"/>
                                         <connections>
@@ -99,8 +90,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gfp-xU-iMz">
-                                        <rect key="frame" x="136" y="174" width="96" height="26"/>
-                                        <animations/>
+                                        <rect key="frame" x="136" y="174" width="96" height="66"/>
                                         <color key="backgroundColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Sign In"/>
                                         <connections>
@@ -109,7 +99,6 @@
                                     </button>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yBP-CO-Qql">
                                         <rect key="frame" x="8" y="8" width="224" height="30"/>
-                                        <animations/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="PRU-fq-PRP"/>
                                         </constraints>
@@ -121,7 +110,6 @@
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t0o-Ve-fag">
                                         <rect key="frame" x="8" y="46" width="224" height="30"/>
-                                        <animations/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="7J1-gU-WFf"/>
                                         </constraints>
@@ -133,7 +121,6 @@
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3gw-Bd-IEA">
                                         <rect key="frame" x="8" y="84" width="224" height="30"/>
-                                        <animations/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="ABD-Bw-NlA"/>
                                         </constraints>
@@ -144,12 +131,11 @@
                                         </connections>
                                     </textField>
                                 </subviews>
-                                <animations/>
                                 <color key="backgroundColor" red="0.40000000600000002" green="1" blue="0.80000001190000003" alpha="0.49016702586206895" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="yBP-CO-Qql" firstAttribute="leading" secondItem="HeU-LC-JuG" secondAttribute="leading" constant="8" id="4Qv-TE-shn"/>
                                     <constraint firstItem="Gfp-xU-iMz" firstAttribute="leading" secondItem="nYp-AX-TEO" secondAttribute="trailing" constant="32" id="7Ee-vw-ShD"/>
-                                    <constraint firstAttribute="height" constant="220" id="8uJ-Fd-8WY"/>
+                                    <constraint firstAttribute="height" constant="260" id="8uJ-Fd-8WY"/>
                                     <constraint firstAttribute="trailing" secondItem="3gw-Bd-IEA" secondAttribute="trailing" constant="8" id="92h-KW-4AW"/>
                                     <constraint firstAttribute="trailing" secondItem="yBP-CO-Qql" secondAttribute="trailing" constant="8" id="AAs-ru-itv"/>
                                     <constraint firstAttribute="bottom" secondItem="nYp-AX-TEO" secondAttribute="bottom" constant="20" id="AWL-CH-6Xs"/>
@@ -170,7 +156,6 @@
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Crp-yp-U9j">
                                 <rect key="frame" x="0.0" y="450" width="160" height="30"/>
-                                <animations/>
                                 <color key="backgroundColor" red="1" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Camera"/>
                                 <connections>
@@ -179,7 +164,6 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgy-cY-PQd">
                                 <rect key="frame" x="160" y="450" width="160" height="30"/>
-                                <animations/>
                                 <color key="backgroundColor" red="0.37420260440000003" green="1" blue="0.40520808079999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Log Out"/>
                                 <connections>
@@ -187,7 +171,6 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="QQ2-jf-W2c" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="15" id="3ml-YI-ul7"/>
@@ -214,7 +197,7 @@
                             <constraint firstItem="QQ2-jf-W2c" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="tFf-hS-POa"/>
                             <constraint firstItem="CnE-tf-f5Z" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="15" id="uP3-b5-OAg"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="tgy-cY-PQd" secondAttribute="bottom" id="xDF-GG-7jI"/>
-                            <constraint firstItem="HeU-LC-JuG" firstAttribute="top" secondItem="B8c-q0-oQw" secondAttribute="bottom" constant="120" id="zDh-jf-bhV"/>
+                            <constraint firstItem="HeU-LC-JuG" firstAttribute="top" secondItem="B8c-q0-oQw" secondAttribute="bottom" constant="40" id="zDh-jf-bhV"/>
                             <constraint firstAttribute="trailing" secondItem="QQ2-jf-W2c" secondAttribute="trailing" constant="8" id="zYB-2D-YNW"/>
                         </constraints>
                     </view>
