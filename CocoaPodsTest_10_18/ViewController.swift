@@ -356,6 +356,7 @@ extension ViewController: CVCalendarViewDelegate, CVCalendarMenuViewDelegate {
             updatedMonthLabel.font = monthLabel.font
             updatedMonthLabel.textAlignment = .Center
             updatedMonthLabel.text = date.globalDescription
+            print("test:%@",date.globalDescription);
             updatedMonthLabel.sizeToFit()
             updatedMonthLabel.alpha = 0
             updatedMonthLabel.center = self.monthLabel.center
