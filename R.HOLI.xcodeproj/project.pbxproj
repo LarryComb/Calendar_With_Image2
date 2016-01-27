@@ -67,17 +67,17 @@
 		4662743F1C04EC9300FE789B /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = CocoaPodsTest_10_18/Parse.framework; sourceTree = "<group>"; };
 		466274421C052DE300FE789B /* TableLogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableLogInViewController.swift; sourceTree = "<group>"; };
 		705BB0A994595C05725715CF /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		A008CC241BD4712200DFFFFA /* CocoaPodsTest_10_18.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoaPodsTest_10_18.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A008CC241BD4712200DFFFFA /* R.HOLI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = R.HOLI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A008CC271BD4712200DFFFFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A008CC291BD4712200DFFFFA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A008CC2C1BD4712200DFFFFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A008CC2E1BD4712200DFFFFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A008CC311BD4712200DFFFFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A008CC331BD4712300DFFFFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A008CC381BD4712300DFFFFA /* CocoaPodsTest_10_18Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocoaPodsTest_10_18Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A008CC381BD4712300DFFFFA /* R.HOLI.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = R.HOLI.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A008CC3C1BD4712300DFFFFA /* CocoaPodsTest_10_18Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocoaPodsTest_10_18Tests.swift; sourceTree = "<group>"; };
 		A008CC3E1BD4712300DFFFFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A008CC431BD4712300DFFFFA /* CocoaPodsTest_10_18UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocoaPodsTest_10_18UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A008CC431BD4712300DFFFFA /* R.HOLI.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = R.HOLI.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A008CC471BD4712300DFFFFA /* CocoaPodsTest_10_18UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocoaPodsTest_10_18UITests.swift; sourceTree = "<group>"; };
 		A008CC491BD4712300DFFFFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A00B83CA1C14BAAF00C66C89 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
@@ -167,9 +167,9 @@
 		A008CC251BD4712200DFFFFA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A008CC241BD4712200DFFFFA /* CocoaPodsTest_10_18.app */,
-				A008CC381BD4712300DFFFFA /* CocoaPodsTest_10_18Tests.xctest */,
-				A008CC431BD4712300DFFFFA /* CocoaPodsTest_10_18UITests.xctest */,
+				A008CC241BD4712200DFFFFA /* R.HOLI.app */,
+				A008CC381BD4712300DFFFFA /* R.HOLI.xctest */,
+				A008CC431BD4712300DFFFFA /* R.HOLI.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -212,9 +212,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A008CC231BD4712200DFFFFA /* CocoaPodsTest_10_18 */ = {
+		A008CC231BD4712200DFFFFA /* R.HOLI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A008CC4C1BD4712300DFFFFA /* Build configuration list for PBXNativeTarget "CocoaPodsTest_10_18" */;
+			buildConfigurationList = A008CC4C1BD4712300DFFFFA /* Build configuration list for PBXNativeTarget "R.HOLI" */;
 			buildPhases = (
 				C4AD7B8EEDB60FE002BF075F /* Check Pods Manifest.lock */,
 				A008CC201BD4712200DFFFFA /* Sources */,
@@ -227,14 +227,14 @@
 			);
 			dependencies = (
 			);
-			name = CocoaPodsTest_10_18;
+			name = R.HOLI;
 			productName = CocoaPodsTest_10_18;
-			productReference = A008CC241BD4712200DFFFFA /* CocoaPodsTest_10_18.app */;
+			productReference = A008CC241BD4712200DFFFFA /* R.HOLI.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A008CC371BD4712300DFFFFA /* CocoaPodsTest_10_18Tests */ = {
+		A008CC371BD4712300DFFFFA /* R.HOLITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A008CC4F1BD4712300DFFFFA /* Build configuration list for PBXNativeTarget "CocoaPodsTest_10_18Tests" */;
+			buildConfigurationList = A008CC4F1BD4712300DFFFFA /* Build configuration list for PBXNativeTarget "R.HOLITests" */;
 			buildPhases = (
 				A008CC341BD4712300DFFFFA /* Sources */,
 				A008CC351BD4712300DFFFFA /* Frameworks */,
@@ -245,14 +245,14 @@
 			dependencies = (
 				A008CC3A1BD4712300DFFFFA /* PBXTargetDependency */,
 			);
-			name = CocoaPodsTest_10_18Tests;
+			name = R.HOLITests;
 			productName = CocoaPodsTest_10_18Tests;
-			productReference = A008CC381BD4712300DFFFFA /* CocoaPodsTest_10_18Tests.xctest */;
+			productReference = A008CC381BD4712300DFFFFA /* R.HOLI.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		A008CC421BD4712300DFFFFA /* CocoaPodsTest_10_18UITests */ = {
+		A008CC421BD4712300DFFFFA /* R.HOLIUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A008CC521BD4712300DFFFFA /* Build configuration list for PBXNativeTarget "CocoaPodsTest_10_18UITests" */;
+			buildConfigurationList = A008CC521BD4712300DFFFFA /* Build configuration list for PBXNativeTarget "R.HOLIUITests" */;
 			buildPhases = (
 				A008CC3F1BD4712300DFFFFA /* Sources */,
 				A008CC401BD4712300DFFFFA /* Frameworks */,
@@ -263,9 +263,9 @@
 			dependencies = (
 				A008CC451BD4712300DFFFFA /* PBXTargetDependency */,
 			);
-			name = CocoaPodsTest_10_18UITests;
+			name = R.HOLIUITests;
 			productName = CocoaPodsTest_10_18UITests;
-			productReference = A008CC431BD4712300DFFFFA /* CocoaPodsTest_10_18UITests.xctest */;
+			productReference = A008CC431BD4712300DFFFFA /* R.HOLI.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -293,7 +293,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A008CC1F1BD4712200DFFFFA /* Build configuration list for PBXProject "CocoaPodsTest_10_18" */;
+			buildConfigurationList = A008CC1F1BD4712200DFFFFA /* Build configuration list for PBXProject "R.HOLI" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -306,9 +306,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A008CC231BD4712200DFFFFA /* CocoaPodsTest_10_18 */,
-				A008CC371BD4712300DFFFFA /* CocoaPodsTest_10_18Tests */,
-				A008CC421BD4712300DFFFFA /* CocoaPodsTest_10_18UITests */,
+				A008CC231BD4712200DFFFFA /* R.HOLI */,
+				A008CC371BD4712300DFFFFA /* R.HOLITests */,
+				A008CC421BD4712300DFFFFA /* R.HOLIUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -423,12 +423,12 @@
 /* Begin PBXTargetDependency section */
 		A008CC3A1BD4712300DFFFFA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A008CC231BD4712200DFFFFA /* CocoaPodsTest_10_18 */;
+			target = A008CC231BD4712200DFFFFA /* R.HOLI */;
 			targetProxy = A008CC391BD4712300DFFFFA /* PBXContainerItemProxy */;
 		};
 		A008CC451BD4712300DFFFFA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A008CC231BD4712200DFFFFA /* CocoaPodsTest_10_18 */;
+			target = A008CC231BD4712200DFFFFA /* R.HOLI */;
 			targetProxy = A008CC441BD4712300DFFFFA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -547,7 +547,7 @@
 				INFOPLIST_FILE = CocoaPodsTest_10_18/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.beyondconfidentlabs.CocoaPodsTest-10-18";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = R.HOLI;
 			};
 			name = Debug;
 		};
@@ -564,7 +564,7 @@
 				INFOPLIST_FILE = CocoaPodsTest_10_18/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.beyondconfidentlabs.CocoaPodsTest-10-18";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = R.HOLI;
 			};
 			name = Release;
 		};
@@ -575,8 +575,8 @@
 				INFOPLIST_FILE = CocoaPodsTest_10_18Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.beyondconfidentlabs.CocoaPodsTest-10-18Tests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CocoaPodsTest_10_18.app/CocoaPodsTest_10_18";
+				PRODUCT_NAME = R.HOLI;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/R.HOLI.app/R.HOLI";
 			};
 			name = Debug;
 		};
@@ -587,8 +587,8 @@
 				INFOPLIST_FILE = CocoaPodsTest_10_18Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.beyondconfidentlabs.CocoaPodsTest-10-18Tests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CocoaPodsTest_10_18.app/CocoaPodsTest_10_18";
+				PRODUCT_NAME = R.HOLI;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/R.HOLI.app/R.HOLI";
 			};
 			name = Release;
 		};
@@ -598,7 +598,7 @@
 				INFOPLIST_FILE = CocoaPodsTest_10_18UITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.beyondconfidentlabs.CocoaPodsTest-10-18UITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = R.HOLI;
 				TEST_TARGET_NAME = CocoaPodsTest_10_18;
 				USES_XCTRUNNER = YES;
 			};
@@ -610,7 +610,7 @@
 				INFOPLIST_FILE = CocoaPodsTest_10_18UITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.beyondconfidentlabs.CocoaPodsTest-10-18UITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = R.HOLI;
 				TEST_TARGET_NAME = CocoaPodsTest_10_18;
 				USES_XCTRUNNER = YES;
 			};
@@ -619,7 +619,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A008CC1F1BD4712200DFFFFA /* Build configuration list for PBXProject "CocoaPodsTest_10_18" */ = {
+		A008CC1F1BD4712200DFFFFA /* Build configuration list for PBXProject "R.HOLI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A008CC4A1BD4712300DFFFFA /* Debug */,
@@ -628,7 +628,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A008CC4C1BD4712300DFFFFA /* Build configuration list for PBXNativeTarget "CocoaPodsTest_10_18" */ = {
+		A008CC4C1BD4712300DFFFFA /* Build configuration list for PBXNativeTarget "R.HOLI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A008CC4D1BD4712300DFFFFA /* Debug */,
@@ -637,7 +637,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A008CC4F1BD4712300DFFFFA /* Build configuration list for PBXNativeTarget "CocoaPodsTest_10_18Tests" */ = {
+		A008CC4F1BD4712300DFFFFA /* Build configuration list for PBXNativeTarget "R.HOLITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A008CC501BD4712300DFFFFA /* Debug */,
@@ -646,7 +646,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A008CC521BD4712300DFFFFA /* Build configuration list for PBXNativeTarget "CocoaPodsTest_10_18UITests" */ = {
+		A008CC521BD4712300DFFFFA /* Build configuration list for PBXNativeTarget "R.HOLIUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A008CC531BD4712300DFFFFA /* Debug */,

@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:CocoaPodsTest_10_18.xcodeproj">
+      location = "group:/Users/larrycomb/Desktop/Calendar_With_Image2/R.HOLI.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

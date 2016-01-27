@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A008CC231BD4712200DFFFFA"
-               BuildableName = "CocoaPodsTest_10_18.app"
-               BlueprintName = "CocoaPodsTest_10_18"
-               ReferencedContainer = "container:CocoaPodsTest_10_18.xcodeproj">
+               BuildableName = "R.HOLI.app"
+               BlueprintName = "R.HOLI"
+               ReferencedContainer = "container:R.HOLI.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A008CC371BD4712300DFFFFA"
-               BuildableName = "CocoaPodsTest_10_18Tests.xctest"
-               BlueprintName = "CocoaPodsTest_10_18Tests"
-               ReferencedContainer = "container:CocoaPodsTest_10_18.xcodeproj">
+               BuildableName = "R.HOLI.xctest"
+               BlueprintName = "R.HOLITests"
+               ReferencedContainer = "container:R.HOLI.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A008CC421BD4712300DFFFFA"
-               BuildableName = "CocoaPodsTest_10_18UITests.xctest"
-               BlueprintName = "CocoaPodsTest_10_18UITests"
-               ReferencedContainer = "container:CocoaPodsTest_10_18.xcodeproj">
+               BuildableName = "R.HOLI.xctest"
+               BlueprintName = "R.HOLIUITests"
+               ReferencedContainer = "container:R.HOLI.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A008CC231BD4712200DFFFFA"
-            BuildableName = "CocoaPodsTest_10_18.app"
-            BlueprintName = "CocoaPodsTest_10_18"
-            ReferencedContainer = "container:CocoaPodsTest_10_18.xcodeproj">
+            BuildableName = "R.HOLI.app"
+            BlueprintName = "R.HOLI"
+            ReferencedContainer = "container:R.HOLI.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A008CC231BD4712200DFFFFA"
-            BuildableName = "CocoaPodsTest_10_18.app"
-            BlueprintName = "CocoaPodsTest_10_18"
-            ReferencedContainer = "container:CocoaPodsTest_10_18.xcodeproj">
+            BuildableName = "R.HOLI.app"
+            BlueprintName = "R.HOLI"
+            ReferencedContainer = "container:R.HOLI.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A008CC231BD4712200DFFFFA"
-            BuildableName = "CocoaPodsTest_10_18.app"
-            BlueprintName = "CocoaPodsTest_10_18"
-            ReferencedContainer = "container:CocoaPodsTest_10_18.xcodeproj">
+            BuildableName = "R.HOLI.app"
+            BlueprintName = "R.HOLI"
+            ReferencedContainer = "container:R.HOLI.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
