@@ -279,7 +279,7 @@
 				TargetAttributes = {
 					A008CC231BD4712200DFFFFA = {
 						CreatedOnToolsVersion = 7.0.1;
-						DevelopmentTeam = 782725GYA8;
+						DevelopmentTeam = GYWURP5G4S;
 					};
 					A008CC371BD4712300DFFFFA = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -539,6 +539,8 @@
 			baseConfigurationReference = 705BB0A994595C05725715CF /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: LARRY COMBS (99XPZS6884)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: LARRY COMBS (99XPZS6884)";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -546,8 +548,9 @@
 				);
 				INFOPLIST_FILE = CocoaPodsTest_10_18/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.beyondconfidentlabs.CocoaPodsTest-10-18";
+				PRODUCT_BUNDLE_IDENTIFIER = com.beyondconfidentlabs.CocoaPodsTest;
 				PRODUCT_NAME = R.HOLI;
+				PROVISIONING_PROFILE = "33d96fad-919a-4fb4-ad0b-e033cf4a6261";
 			};
 			name = Debug;
 		};
@@ -556,6 +559,8 @@
 			baseConfigurationReference = D94D6CD473C4781FFD0CC4D1 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: LARRY COMBS (GYWURP5G4S)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: LARRY COMBS (GYWURP5G4S)";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -563,8 +568,9 @@
 				);
 				INFOPLIST_FILE = CocoaPodsTest_10_18/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.beyondconfidentlabs.CocoaPodsTest-10-18";
+				PRODUCT_BUNDLE_IDENTIFIER = com.beyondconfidentlabs.CocoaPodsTest;
 				PRODUCT_NAME = R.HOLI;
+				PROVISIONING_PROFILE = "33d96fad-919a-4fb4-ad0b-e033cf4a6261";
 			};
 			name = Release;
 		};

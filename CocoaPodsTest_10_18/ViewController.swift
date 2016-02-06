@@ -74,6 +74,11 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
         imageQuery.whereKey("createdAt", greaterThanOrEqualTo: date)
     
         imageQuery.findObjectsInBackgroundWithBlock { [weak self] (imageObjects, error) -> Void in
+            
+            dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) {
+
+            
+            
             if error == nil {
                 if let imageObjects = imageObjects {
                     for imageObject in imageObjects {
@@ -81,7 +86,9 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
                             if let data = try? imageFile.getData() {
                                 if let image = UIImage(data: data) {
                                     self?.imageObjects.insert(imageObject, atIndex: 0)
-                                    do { try (imageObject["user"] as? PFUser)?.fetchIfNeeded() }
+                                    do {
+                                        try (imageObject["user"] as? PFUser)?.fetchIfNeeded()
+                                    }
                                     catch {}
                                     self?.images.insert(image, atIndex: 0)
                                 }
@@ -90,10 +97,14 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
                     }
                 }
             
-                self?.TableView.reloadData()
+                dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                    self?.TableView.reloadData()
+                })
                 
+            
             } else {
                 //TODO Alert user that images are not loading
+            }
             }
         }
         //let testObject = PFObject(className: "TestObject")
